@@ -1,0 +1,11 @@
+.venv/
+.env
+
+.DS_Store
+*.py[cod]
+*$py.class
+
+data/detected_anomalies.csv
+data/ecommerce_data.csv
+data/model.pkl
+
