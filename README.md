@@ -27,12 +27,13 @@ The application leverages algorithms like Isolation Forest to identify unusual s
 
 ### Set up
 1. Clone the repo: `git clone https://github.com/liz-acosta/ai-anomaly-detection.git`
+2. Change directory to the project directory: `cd ai-anomaly-detection`
 2. Create the virtual environment: `virtualenv venv`
 3. Activate the virtual environment: `source venv/bin/activate`
 4. Install the dependencies: `pip install -r requirements.txt`
 
 ### Machine learning workflow
-1. Generate the sample e-commerce data and output it to a .csv file in the `data/` directory: `python3 -m utilities.generate_sample_data`
+1. Generate the sample e-commerce data and output it to a .csv file in the `data/` directory: `python3 -m utilities.generate_ecommerce_data`
 2. Train the anomaly model and output it to a .pkl file in the `data/` directory: `python3 -m utilities.train_anomaly_model`
 3. Detect anomalies and output them to a .csv file in the `data/` directory: `python3 -m utilities.detect_anomalies`
 
