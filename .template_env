@@ -1,2 +1,2 @@
 # Secrets
-OPENAI_KEY="Add your API key here"
+OPENAI_API_KEY="Add your API key here"
