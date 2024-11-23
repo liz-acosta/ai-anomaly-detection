@@ -10,7 +10,6 @@ from utilities.config import FILEPATHS
 DATA_FILE = FILEPATHS["generated_data"]
 MODEL_FILE = FILEPATHS["model"]
 
-# Function to preprocess data
 def preprocess_data(file_path):
     """Load and preprocess the data for training the anomaly detection model."""
     data = pd.read_csv(file_path, parse_dates=["Date"])
@@ -19,7 +18,6 @@ def preprocess_data(file_path):
     numeric_data = data.drop(columns=["Date"])
     return numeric_data
 
-# Function to train Isolation Forest model
 def train_model(data):
     """Train an Isolation Forest model for anomaly detection."""
     
@@ -35,6 +33,8 @@ def train_model(data):
 
 # Main function
 def main():
+    print("Model training initiated ...")
+
     # Step 1: Load and preprocess the data
     print("Loading and preprocessing data...")
     data = preprocess_data(DATA_FILE)
@@ -49,6 +49,7 @@ def main():
     joblib.dump(model, MODEL_FILE)
 
     print("Model training complete!")
+    print(f"Model .pkl file saved to {DATA_FILE}")
 
 # Run the script
 if __name__ == "__main__":

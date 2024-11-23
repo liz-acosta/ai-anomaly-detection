@@ -2,14 +2,8 @@ import numpy as np
 import pandas as pd
 from utilities.config import FILEPATHS
 
+# Filepath
 DATA_FILE = FILEPATHS["generated_data"]
-
-MESSAGE_BEGIN = ["###", "Generating sales_data.csv file. This data will be used in the tutorial.", ".", "..", "..."]
-MESSAGE_END = [f"Data generated and saved to {FILEPATHS['generated_data']}.", "###"]
-
-def display_message(message):
-    for line in message:
-        print(line)
 
 def generate_data():
     """Generate sample e-commerce data and save it to a csv file."""
@@ -48,13 +42,14 @@ def generate_data():
     csv_filename = DATA_FILE
     data.to_csv(csv_filename, index=False)
 
+# Main function
 def main():
-
-    display_message(MESSAGE_BEGIN)
+    print("Generating sample e-commerce data .csv file.")
 
     generate_data()
 
-    display_message(MESSAGE_END)
+    print(f".csv file saved to {DATA_FILE}")
 
+# Run the script
 if __name__ == "__main__":
     main()
