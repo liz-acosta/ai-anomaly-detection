@@ -3,6 +3,7 @@ The repo contains an application that performs the following:
 * Uses a machine learning model to detect anomalies in e-commerce data
 * Uses a large language model to generate a possible explanation for the detected anomalies and recommend actions to take
 * Provides a UI that visualizes the e-commerce data and enables users to interact with it
+![A gif demo of the app](static/app-demo.gif)
 
 # About this repo
 - `data/`: Stores the generated datasets and the model
