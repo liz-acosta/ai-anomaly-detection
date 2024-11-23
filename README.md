@@ -44,3 +44,6 @@ The application leverages algorithms like Isolation Forest to identify unusual s
 
 ### Run the tests (Optional)
 1. `python3 -m unittest`
+
+## Additional resources
+* [Build an AI-Powered Anomaly Detection Application for E-Commerce Analytics](https://dev.to/lizzzzz/build-an-ai-powered-anomaly-detection-application-for-e-commerce-analytics-2fj)
